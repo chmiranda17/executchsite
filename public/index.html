@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Acompanhe as obrigações, os prazos e os responsáveis pelas entregas do seu escritório contábil. Conheça o Executch e solicite uma demonstração.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Executch | Prazos e entregas para escritórios contábeis">
+    <meta property="og:description" content="Acompanhe as obrigações, os prazos e os responsáveis pelas entregas do seu escritório contábil. Conheça o Executch e solicite uma demonstração.">
+    <meta property="og:image" content="/global/assets/brand/executch/marketing/og-image-1200x630.png">
+    <title>Executch | Prazos e entregas para escritórios contábeis</title>
+    <link rel="icon" href="/global/assets/brand/executch/icons/favicon-adaptive.svg" type="image/svg+xml">
+    <script>
+        const landingThemeKey = 'executch-landing-theme';
+        let selectedLandingTheme;
+        try {
+            selectedLandingTheme = localStorage.getItem(landingThemeKey);
+        } catch {}
+        const applyLandingTheme = () => {
+            const theme = selectedLandingTheme === 'dark' ? 'dark' : 'light';
+            document.documentElement.dataset.theme = theme;
+            const toggle = document.getElementById('landing-theme-toggle');
+            if (toggle) toggle.textContent = theme === 'dark' ? 'Modo claro' : 'Modo escuro';
+        };
+        applyLandingTheme();
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggle = document.getElementById('landing-theme-toggle');
+            toggle.addEventListener('click', () => {
+                selectedLandingTheme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+                try {
+                    localStorage.setItem(landingThemeKey, selectedLandingTheme);
+                } catch {}
+                applyLandingTheme();
+            });
+            applyLandingTheme();
+            toggle.hidden = false;
+        });
+    </script>
+                            <link rel="stylesheet" href="/global/css/fonts.css?v=1788538668">
+                    <link rel="stylesheet" href="/global/css/style.css?v=1795458789">
+                    <link rel="stylesheet" href="/global/css/landing.css?v=1795452963">
+    </head>
+<body class="landing-page">
+    <a class="landing-skip" href="#conteudo">Ir para o conteúdo</a>
+    <header class="landing-header">
+        <div class="landing-container landing-nav">
+            <a class="landing-brand" href="/">
+                <img src="/global/assets/brand/executch/icons/icon-ultrarealistic-256.png" alt="" width="36" height="36">
+                <span>Executch</span>
+            </a>
+            <nav aria-label="Navegação principal">
+                                    <a class="landing-nav-section" href="#como-funciona">Como funciona</a>
+                    <a class="landing-nav-section" href="#assistente">Assistente</a>
+                                <button type="button" class="button button-ghost" id="landing-theme-toggle" hidden>Modo claro</button>
+                                    <a class="button button-ghost" href="/login.html">Entrar</a>
+                            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo" tabindex="-1">
+                <section class="landing-container landing-hero" aria-labelledby="landing-titulo">
+            <div>
+                <p class="landing-kicker">Gestão para escritórios contábeis</p>
+                <h1 id="landing-titulo">Controle os prazos do escritório e automatize o envio de guias.</h1>
+                <p class="landing-lead">Veja as prioridades no dashboard, acompanhe cada obrigação na Lista de Entregas e use o Assistente para processar e enviar guias conforme as regras do escritório.</p>
+                <div class="landing-actions">
+                    <a class="button landing-primary" href="https://wa.me/5564992868540?text=Ol%C3%A1%21%20Gostaria%20de%20solicitar%20uma%20demonstra%C3%A7%C3%A3o%20do%20Executch%20para%20meu%20escrit%C3%B3rio%20cont%C3%A1bil.">Solicitar demonstração no WhatsApp</a>
+                    <a class="landing-text-link" href="#como-funciona">Ver como funciona</a>
+                </div>
+            </div>
+            <img class="landing-hero-image" src="/global/assets/brand/executch/marketing/landing-hero-1200x675.webp"
+                 width="1200" height="675" alt="" fetchpriority="high">
+        </section>
+
+        <nav class="landing-container landing-shortcuts" aria-label="Recursos do Executch">
+            <a href="#dashboards">Dashboards</a>
+            <a href="#como-funciona">Entregas</a>
+            <a href="#assistente">Assistente</a>
+            <a href="#certificados">Certificados</a>
+            <a href="#comunicados">Comunicados</a>
+            <a href="#integracao-ia">Integração com IA</a>
+        </nav>
+
+        <section class="landing-container landing-section landing-dashboard" id="dashboards" aria-labelledby="landing-dashboard">
+            <p class="landing-kicker">Dashboards</p>
+            <h2 id="landing-dashboard">Comece o dia pelas prioridades.</h2>
+            <p>Acompanhe entregas, pendências e atrasos. Use as visões por colaborador, empresa ou atividade para decidir onde a equipe precisa agir.</p>
+            <figure class="landing-demo">
+                <figcaption class="landing-demo-header">
+                    <strong>Comparativo por colaborador</strong>
+                    <span>Exemplo com dados fictícios</span>
+                </figcaption>
+                <ul class="landing-chart-legend" role="list">
+                    <li class="landing-chart-on-time">Entregues no prazo</li>
+                    <li class="landing-chart-late">Entregues com atraso</li>
+                    <li class="landing-chart-open">Abertas</li>
+                </ul>
+                <ul class="landing-chart-grid" role="list">
+                                                                    <li>
+                            <strong>Marina Costa</strong>
+                            <div class="landing-chart-ring" role="img"
+                                 aria-label="93% de conclusão. 56% no prazo, 37% com atraso e 7% abertas."
+                                 style="--chart-first: 56%; --chart-second: 93%">
+                                <div aria-hidden="true">
+                                    <strong>93,0%</strong>
+                                    <span>de conclusão</span>
+                                </div>
+                            </div>
+                        </li>
+                                                                    <li>
+                            <strong>Lucas Ribeiro</strong>
+                            <div class="landing-chart-ring" role="img"
+                                 aria-label="100% de conclusão. 78% no prazo, 22% com atraso e 0% abertas."
+                                 style="--chart-first: 78%; --chart-second: 100%">
+                                <div aria-hidden="true">
+                                    <strong>100,0%</strong>
+                                    <span>de conclusão</span>
+                                </div>
+                            </div>
+                        </li>
+                                                                    <li>
+                            <strong>Camila Rocha</strong>
+                            <div class="landing-chart-ring" role="img"
+                                 aria-label="24% de conclusão. 5% no prazo, 19% com atraso e 76% abertas."
+                                 style="--chart-first: 5%; --chart-second: 24%">
+                                <div aria-hidden="true">
+                                    <strong>24,0%</strong>
+                                    <span>de conclusão</span>
+                                </div>
+                            </div>
+                        </li>
+                                                                    <li>
+                            <strong>Rafael Lima</strong>
+                            <div class="landing-chart-ring" role="img"
+                                 aria-label="24% de conclusão. 12% no prazo, 12% com atraso e 76% abertas."
+                                 style="--chart-first: 12%; --chart-second: 24%">
+                                <div aria-hidden="true">
+                                    <strong>24,0%</strong>
+                                    <span>de conclusão</span>
+                                </div>
+                            </div>
+                        </li>
+                                                                    <li>
+                            <strong>Beatriz Alves</strong>
+                            <div class="landing-chart-ring" role="img"
+                                 aria-label="8% de conclusão. 0% no prazo, 8% com atraso e 92% abertas."
+                                 style="--chart-first: 0%; --chart-second: 8%">
+                                <div aria-hidden="true">
+                                    <strong>8,0%</strong>
+                                    <span>de conclusão</span>
+                                </div>
+                            </div>
+                        </li>
+                                                                    <li>
+                            <strong>Bruno Martins</strong>
+                            <div class="landing-chart-ring" role="img"
+                                 aria-label="80% de conclusão. 80% no prazo, 0% com atraso e 20% abertas."
+                                 style="--chart-first: 80%; --chart-second: 80%">
+                                <div aria-hidden="true">
+                                    <strong>80,0%</strong>
+                                    <span>de conclusão</span>
+                                </div>
+                            </div>
+                        </li>
+                                    </ul>
+            </figure>
+        </section>
+
+        <section class="landing-section landing-workflow" id="como-funciona" aria-labelledby="landing-fluxo">
+            <div class="landing-container landing-deliveries">
+                <div>
+                    <p class="landing-kicker">Acompanhamento de entregas</p>
+                    <h2 id="landing-fluxo">Veja o que precisa de atenção.</h2>
+                    <p>Filtre a lista de entregas por empresa, responsável ou situação. Veja a obrigação, o prazo e o que ainda falta para concluir.</p>
+                </div>
+                <figure class="landing-demo">
+                    <figcaption class="landing-demo-header">
+                        <strong>Lista de entregas</strong>
+                        <span>Exemplo ilustrativo</span>
+                    </figcaption>
+                    <div class="table-scroll landing-example-scroll" role="region"
+                         aria-label="Tabela de exemplo de entregas" tabindex="0">
+                        <table class="data-table landing-example-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Obrigação / Empresa</th>
+                                    <th scope="col">Prazo interno</th>
+                                    <th scope="col">Compet. / Venc.</th>
+                                    <th scope="col">Responsável</th>
+                                    <th scope="col">Situação</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                                                    <tr>
+                                        <td><strong>DCTFWeb</strong><span>Horizonte Comércio</span></td>
+                                        <td><time datetime="2026-12-15">15/12/2026 00:00</time></td>
+                                        <td><time datetime="2026-11">11/2026</time><span><time datetime="2026-12-18">18/12/2026 00:00</time></span></td>
+                                        <td>Marina Costa</td>
+                                        <td><span class="landing-status landing-status-danger">Em atraso</span></td>
+                                    </tr>
+                                                                    <tr>
+                                        <td><strong>DAS Simples Nacional</strong><span>Horizonte Comércio</span></td>
+                                        <td><time datetime="2026-12-18">18/12/2026 00:00</time></td>
+                                        <td><time datetime="2026-11">11/2026</time><span><time datetime="2026-12-21">21/12/2026 00:00</time></span></td>
+                                        <td>Marina Costa</td>
+                                        <td><span class="landing-status landing-status-warning">Pendente</span></td>
+                                    </tr>
+                                                                    <tr>
+                                        <td><strong>EFD-Reinf</strong><span>Vila Norte Serviços</span></td>
+                                        <td><time datetime="2026-12-18">18/12/2026 00:00</time></td>
+                                        <td><time datetime="2026-11">11/2026</time><span><time datetime="2026-12-21">21/12/2026 00:00</time></span></td>
+                                        <td>Lucas Ribeiro</td>
+                                        <td><span class="landing-status landing-status-success">Entregue</span></td>
+                                    </tr>
+                                                                    <tr>
+                                        <td><strong>Guia de ISS</strong><span>Ponto Sul Consultoria</span></td>
+                                        <td><time datetime="2026-12-22">22/12/2026 00:00</time></td>
+                                        <td><time datetime="2026-11">11/2026</time><span><time datetime="2026-12-28">28/12/2026 00:00</time></span></td>
+                                        <td>Camila Rocha</td>
+                                        <td><span class="landing-status landing-status-warning">Pendente</span></td>
+                                    </tr>
+                                                            </tbody>
+                        </table>
+                    </div>
+                </figure>
+            </div>
+        </section>
+
+        <section class="landing-container landing-section landing-assistant" id="assistente" aria-labelledby="landing-assistente">
+            <div>
+                <p class="landing-kicker">Assistente de Documentos</p>
+                <h2 id="landing-assistente">Da leitura do PDF ao envio ao cliente.</h2>
+                <p><strong>Antes, sua equipe fazia tudo à mão.</strong> Abria a guia, conferia os dados, localizava a entrega no Executch, dava baixa e enviava o documento ao cliente.</p>
+                <p class="landing-assistant-intro"><strong>Agora, sua equipe coloca o PDF na pasta de envio.</strong> O Assistente cuida das etapas configuradas pelo escritório.</p>
+                <ul class="landing-assistant-steps">
+                    <li><strong>Lê o arquivo</strong> e identifica a empresa, a obrigação e a competência.</li>
+                    <li><strong>Anexa o PDF</strong> à entrega correspondente e dá baixa no Executch.</li>
+                    <li><strong>Envia a guia ou o documento</strong> por e-mail ao cliente.</li>
+                </ul>
+            </div>
+            <ol class="landing-flow" role="list" aria-label="Do PDF ao cliente">
+                                                        <li class="landing-demo">
+                        <picture>
+                            <source media="(prefers-reduced-motion: no-preference)"
+                                    srcset="/global/assets/brand/executch/marketing/assistente-pasta.gif?v=1795450384">
+                            <img src="/global/assets/brand/executch/marketing/assistente-pasta.webp"
+                                 width="360" height="200" alt="" loading="lazy">
+                        </picture>
+                        <strong>PDF na pasta de envio</strong>
+                    </li>
+                                                        <li class="landing-demo">
+                        <picture>
+                            <source media="(prefers-reduced-motion: no-preference)"
+                                    srcset="/global/assets/brand/executch/marketing/assistente-leitura.gif?v=1795450384">
+                            <img src="/global/assets/brand/executch/marketing/assistente-leitura.webp"
+                                 width="360" height="200" alt="" loading="lazy">
+                        </picture>
+                        <strong>Assistente lendo o documento</strong>
+                    </li>
+                                                        <li class="landing-demo">
+                        <picture>
+                            <source media="(prefers-reduced-motion: no-preference)"
+                                    srcset="/global/assets/brand/executch/marketing/assistente-envio.gif?v=1795450384">
+                            <img src="/global/assets/brand/executch/marketing/assistente-envio.webp"
+                                 width="360" height="200" alt="" loading="lazy">
+                        </picture>
+                        <strong>Documento enviado ao cliente</strong>
+                    </li>
+                            </ol>
+        </section>
+
+        <section class="landing-section landing-workflow" id="certificados" aria-labelledby="landing-certificados">
+            <div class="landing-container landing-deliveries">
+                <div>
+                    <p class="landing-kicker">Certificados digitais</p>
+                    <h2 id="landing-certificados">Antecipe as renovações.</h2>
+                    <p>Consulte a situação dos certificados por empresa e planeje as renovações com os lembretes de vencimento.</p>
+                    <div class="landing-reminders">
+                        <div class="landing-reminder-heading">
+                            <img src="/global/icons/fluent-color/calendar-clock.svg" width="32" height="32" alt="" loading="lazy">
+                            <strong>Dias antes do vencimento</strong>
+                        </div>
+                        <ol class="landing-reminder-days" role="list">
+                            <li>30 dias</li><li>15 dias</li><li>7 dias</li>
+                        </ol>
+                        <ul class="landing-reminder-channels" role="list">
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4" stroke-linecap="round" stroke-linejoin="round"/></svg> Notificação no Executch</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6" stroke-linecap="round" stroke-linejoin="round"/></svg> E-mail</li>
+                        </ul>
+                    </div>
+                </div>
+                <figure class="landing-demo">
+                    <figcaption class="landing-demo-header">
+                        <strong>Vencimento de certificados</strong>
+                        <span>Exemplo ilustrativo</span>
+                    </figcaption>
+                    <div class="table-scroll landing-example-scroll" role="region"
+                         aria-label="Tabela de exemplo de certificados digitais" tabindex="0">
+                        <table class="data-table landing-example-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Empresa / Titular</th>
+                                    <th scope="col">Vencimento</th>
+                                    <th scope="col">Situação</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                                                    <tr>
+                                        <td><strong>Vila Norte Serviços</strong></td>
+                                        <td><time datetime="2026-11-12">12/11/2026 00:00</time></td>
+                                        <td><span class="landing-status landing-status-danger">Vencido</span></td>
+                                    </tr>
+                                                                    <tr>
+                                        <td><strong>Horizonte Comércio</strong></td>
+                                        <td><time datetime="2026-12-18">18/12/2026 00:00</time></td>
+                                        <td><span class="landing-status landing-status-warning">A vencer</span></td>
+                                    </tr>
+                                                                    <tr>
+                                        <td><strong>Ponto Sul Consultoria</strong></td>
+                                        <td><time datetime="2027-03-09">09/03/2027 00:00</time></td>
+                                        <td><span class="landing-status landing-status-success">Válido</span></td>
+                                    </tr>
+                                                            </tbody>
+                        </table>
+                    </div>
+                </figure>
+            </div>
+        </section>
+
+        <section class="landing-container landing-section landing-dashboard" id="comunicados" aria-labelledby="landing-comunicados">
+            <p class="landing-kicker">Comunicados</p>
+            <h2 id="landing-comunicados">Mantenha a equipe e os clientes informados.</h2>
+            <p>Consulte avisos internos no Executch e envie comunicados por e-mail aos clientes selecionados.</p>
+            <div class="landing-comms">
+                <figure class="landing-demo">
+                    <figcaption class="landing-demo-header">
+                        <strong class="landing-with-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4" stroke-linecap="round" stroke-linejoin="round"/></svg> Avisos internos</strong>
+                        <span>Exemplo ilustrativo</span>
+                    </figcaption>
+                    <div class="landing-message">
+                        <strong>Certificado próximo do vencimento</strong>
+                        <p>Horizonte Comércio · Confira o vencimento e organize a renovação com a equipe.</p>
+                    </div>
+                </figure>
+                <figure class="landing-demo">
+                    <figcaption class="landing-demo-header">
+                        <strong class="landing-with-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6" stroke-linecap="round" stroke-linejoin="round"/></svg> Comunicados aos clientes</strong>
+                        <span>Exemplo ilustrativo</span>
+                    </figcaption>
+                    <div class="landing-message">
+                        <dl class="landing-message-fields">
+                            <div><dt>Para</dt><dd>Financeiro da Horizonte Comércio</dd></div>
+                            <div><dt>Assunto</dt><dd>Prazo para enviar os documentos do mês</dd></div>
+                        </dl>
+                        <p>Olá! Envie os documentos do fechamento até sexta-feira para que nossa equipe possa iniciar a conferência.</p>
+                    </div>
+                </figure>
+            </div>
+        </section>
+
+        <section class="landing-section landing-workflow" id="integracao-ia" aria-labelledby="landing-mcp">
+            <div class="landing-container landing-split">
+                <div>
+                    <p class="landing-kicker">Integração com agentes de IA</p>
+                    <h2 id="landing-mcp">Consulte o Executch em uma conversa.</h2>
+                    <p>Com a integração MCP (Model Context Protocol), agentes de IA compatíveis podem consultar entregas, indicadores, processos e solicitações do escritório, conforme as permissões concedidas.</p>
+                    <div class="landing-mcp-flow" aria-label="ChatGPT ou Claude consultam o Executch via MCP">
+                        <div class="landing-mcp-agents">
+                            <span><img src="/global/assets/brand/executch/marketing/integracao-chatgpt.png" width="32" height="32" alt="" loading="lazy">ChatGPT</span>
+                            <span><img src="/global/assets/brand/executch/marketing/integracao-claude.png" width="32" height="32" alt="" loading="lazy">Claude</span>
+                        </div>
+                        <span class="landing-mcp-link">via MCP <span aria-hidden="true">→</span></span>
+                        <strong class="landing-mcp-product"><img src="/global/assets/brand/executch/icons/icon-ultrarealistic-256.png" width="32" height="32" alt="" loading="lazy">Executch</strong>
+                    </div>
+                    <div class="landing-actions landing-mcp-actions">
+                        <a class="button landing-primary" href="/mcp.html">Conhecer o Executch MCP</a>
+                    </div>
+                </div>
+                <figure class="landing-demo">
+                    <figcaption class="landing-demo-header">
+                        <strong>Consulta de entregas com IA</strong>
+                        <span>Exemplo ilustrativo</span>
+                    </figcaption>
+                    <div class="landing-message landing-mcp-question">
+                        <strong>Pergunta</strong>
+                        <p>Quais entregas da Horizonte Comércio precisam de atenção?</p>
+                    </div>
+                    <div class="landing-message">
+                        <strong>Resposta do agente</strong>
+                        <p>A DCTFWeb está em atraso. O DAS do Simples Nacional está pendente e tem prazo interno em 18/12. Marina Costa é responsável pelas duas entregas.</p>
+                    </div>
+                </figure>
+            </div>
+        </section>
+
+        <section class="landing-container landing-contact" aria-labelledby="landing-demo-titulo">
+            <div>
+                <h2 id="landing-demo-titulo">Veja o Executch na rotina do seu escritório.</h2>
+                <p>Na demonstração, mostramos como acompanhar uma entrega, processar um PDF e configurar os avisos de vencimento dos certificados.</p>
+            </div>
+            <a class="button landing-primary" href="https://wa.me/5564992868540?text=Ol%C3%A1%21%20Gostaria%20de%20solicitar%20uma%20demonstra%C3%A7%C3%A3o%20do%20Executch%20para%20meu%20escrit%C3%B3rio%20cont%C3%A1bil.">Solicitar demonstração no WhatsApp</a>
+        </section>
+            </main>
+
+    <footer class="landing-footer">
+        <div class="landing-container landing-nav">
+            <span>Executch</span>
+                            <a class="landing-text-link" href="/login.html">Acessar o sistema</a>
+                    </div>
+    </footer>
+</body>
+</html>
