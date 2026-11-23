@@ -1,0 +1,19 @@
+services:
+  - type: web
+    runtime: static
+    name: executch-site
+    buildCommand: "true"
+    staticPublishPath: ./public
+    routes:
+      - type: redirect
+        source: /conheca
+        destination: /
+      - type: redirect
+        source: /conheca/mcp
+        destination: /mcp.html
+      - type: rewrite
+        source: /mcp
+        destination: /mcp.html
+      - type: rewrite
+        source: /login
+        destination: /login.html
